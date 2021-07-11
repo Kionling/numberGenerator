@@ -1,17 +1,10 @@
-var numberGenerator = document.querySelector("#numberGenerator")
-var numberField = document.getElementById("numberGenerator")
-var button = document.querySelector("#generatorBtn")
-var generatedNum = ""
+var numberGenerator = document.querySelector("#numberGenerator");
+var button = document.querySelector("#generatorBtn");
 
+function numberGen() {
+  var num = Math.round(Math.random() * 10000);
+  numberGenerator.innerHTML = num;
+  return num;
+}
 
-
-function numberGen(){
-var num = Math.random() * 10000
-        numberGenerator.innerHTML = num
-        return num
-}   
-// numberGenerator.innerHTML = numberGen()
-
-
-
-button.addEventListener("click", numberGen)
+button.addEventListener("click", numberGen);
