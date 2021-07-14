@@ -1,44 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Number Generator</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="styles.css" rel="stylesheet"/>
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
     <nav class="navbar navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="./assets/Numgen.png" alt="" width="30" height="24" class="d-inline-block align-text-top circle">
-            Number Generator
-          </a>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="./assets/Numgen.png"
+            alt=""
+            width="30"
+            height="24"
+            class="d-inline-block align-text-top circle"
+          />
+          Number Generator
+        </a>
+      </div>
+    </nav>
+    <div align="center">
+      <div class="row container" align="center">
+        <div class="row">
+          <h1 id="title" class="fw-bold">Number Generator</h1>
         </div>
-       
-      </nav>
-<div align="center">
-      <div class="row container " align="center">
         <div class="row">
-        <h1 id="title" class="fw-bold">Number Generator</h1>
+          <h2>Your generated number</h2>
+          <p>Between 1-10000</p>
         </div>
         <div class="row">
-        <h2>Your generated number</h2>
-        <p>Between 1-10000</p>
-        </div>  
-        <div class="row">
-        <textarea id="numberGenerator"></textarea>
+          <textarea id="numberGenerator"></textarea>
         </div>
         <div class="col s6">
-        <button type="button" id="generatorBtn" class="btn btn-dark">Generate</button>
+          <button type="button" id="generatorBtn" class="btn btn-dark">
+            Generate
+          </button>
         </div>
-
-
+      </div>
     </div>
-    </div>
-
-</body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<script src="./index.js"></script>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+  <script src="./index.js"></script>
 </html>
